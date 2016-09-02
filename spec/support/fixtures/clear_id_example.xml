@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClearID_Input>
+  <SessionID>session_id</SessionID>
+  <Pedido>
+    <PedidoID>42</PedidoID>
+    <Data>2016-07-02T14:30:51</Data>
+    <Email>dev@pegcar.com</Email>
+    <CanalID>SITE</CanalID>
+    <B2B_B2C>B2C</B2B_B2C>
+    <ValorFrete>0.00</ValorFrete>
+    <ValorTotalItens>440.00</ValorTotalItens>
+    <ValorTotalPedido>157.00</ValorTotalPedido>
+    <QtdParcelas>1</QtdParcelas>
+    <PrazoEntrega>1</PrazoEntrega>
+    <QtdItens>2</QtdItens>
+    <QtdFormasPagamento>1</QtdFormasPagamento>
+    <IP>192.168.0.256</IP>
+    <Observacao>obs</Observacao>
+    <Status>0</Status>
+    <Origem>web</Origem>
+    <DadosCobranca>
+      <UsuarioID>42</UsuarioID>
+      <TipoUsuario>1</TipoUsuario>
+      <DocumentoLegal1>43523311-1</DocumentoLegal1>
+      <DocumentoLegal2>36564860111</DocumentoLegal2>
+      <Nome>Rafael Almeida</Nome>
+      <Email>dev@pegcar.com</Email>
+      <Sexo>M</Sexo>
+      <Nascimento>1987-04-09T00:00:00</Nascimento>
+      <Endereco>
+        <Logradouro>Brigadeiro Araujo</Logradouro>
+        <Complemento>Casa Única</Complemento>
+        <Numero>76</Numero>
+        <Bairro>Freguesia do Ó</Bairro>
+        <Cidade>São Paulo</Cidade>
+        <UF>SP</UF>
+        <CEP>02733090</CEP>
+        <Pais>Brasil</Pais>
+      </Endereco>
+      <Telefones>
+        <Telefone>
+          <Tipo>0</Tipo>
+          <DDI>55</DDI>
+          <DDD>11</DDD>
+          <Numero>972653111</Numero>
+          <Ramal>11</Ramal>
+        </Telefone>
+      </Telefones>
+    </DadosCobranca>
+    <DadosEntrega>
+      <UsuarioID>42</UsuarioID>
+      <TipoUsuario>1</TipoUsuario>
+      <DocumentoLegal1>43523311-1</DocumentoLegal1>
+      <DocumentoLegal2>36564860111</DocumentoLegal2>
+      <Nome>Rafael Almeida</Nome>
+      <Email>dev@pegcar.com</Email>
+      <Sexo>M</Sexo>
+      <Nascimento>1987-04-09T00:00:00</Nascimento>
+      <Endereco>
+        <Logradouro>Brigadeiro Araujo</Logradouro>
+        <Complemento>Casa Única</Complemento>
+        <Numero>76</Numero>
+        <Bairro>Freguesia do Ó</Bairro>
+        <Cidade>São Paulo</Cidade>
+        <UF>SP</UF>
+        <CEP>02733090</CEP>
+        <Pais>Brasil</Pais>
+      </Endereco>
+      <Telefones>
+        <Telefone>
+          <Tipo>0</Tipo>
+          <DDI>55</DDI>
+          <DDD>11</DDD>
+          <Numero>972653111</Numero>
+          <Ramal>11</Ramal>
+        </Telefone>
+      </Telefones>
+    </DadosEntrega>
+    <Pagamentos>
+      <Pagamento>
+        <NumeroSequencial>1</NumeroSequencial>
+        <Data>2016-07-02T14:30:51</Data>
+        <Valor>157.00</Valor>
+        <TipoPagamentoID>14</TipoPagamentoID>
+        <QtdParcelas>1</QtdParcelas>
+        <HashNumeroCartao>747417f2206148a3118d02f3adf20b5e4139baac</HashNumeroCartao>
+        <BinCartao>111111</BinCartao>
+        <Cartao4Ultimos>1111</Cartao4Ultimos>
+        <TipoCartao>3</TipoCartao>
+        <DataValidadeCartao>01/18</DataValidadeCartao>
+        <NomeTitularCartao>Rafael S Almeida</NomeTitularCartao>
+        <DocumentoLegal1>36564860111</DocumentoLegal1>
+        <EnderecoCobranca>
+          <Logradouro>Brigadeiro Araujo</Logradouro>
+          <Complemento>Casa Única</Complemento>
+          <Numero>76</Numero>
+          <Bairro>Freguesia do Ó</Bairro>
+          <Cidade>São Paulo</Cidade>
+          <UF>SP</UF>
+          <CEP>02733090</CEP>
+          <Pais>Brasil</Pais>
+        </EnderecoCobranca>
+      </Pagamento>
+    </Pagamentos>
+    <Itens>
+      <Item>
+        <CodigoItem>110</CodigoItem>
+        <NomeItem>Pikachu</NomeItem>
+        <ValorItem>220.00</ValorItem>
+        <Quantidade>22</Quantidade>
+        <Generico>OBS</Generico>
+        <CodigoCategoria>110</CodigoCategoria>
+        <NomeCategoria>Única</NomeCategoria>
+      </Item>
+      <Item>
+        <CodigoItem>110</CodigoItem>
+        <NomeItem>Pikachu</NomeItem>
+        <ValorItem>220.00</ValorItem>
+        <Quantidade>22</Quantidade>
+        <Generico>OBS</Generico>
+        <CodigoCategoria>110</CodigoCategoria>
+        <NomeCategoria>Única</NomeCategoria>
+      </Item>
+    </Itens>
+  </Pedido>
+</ClearID_Input>
