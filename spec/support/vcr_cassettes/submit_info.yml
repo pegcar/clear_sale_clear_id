@@ -1,0 +1,904 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://homologacao.clearsale.com.br:80/integracaov2/service.asmx?WSDL
+    body: 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private, max-age=0
+      content-type:
+      - text/xml; charset=utf-8
+      vary:
+      - Accept-Encoding
+      server:
+      - Microsoft-IIS/8.5
+      x-aspnet-version:
+      - 2.0.50727
+      x-powered-by:
+      - ASP.NET
+      date:
+      - Tue, 30 Aug 2016 14:53:36 GMT
+      content-length:
+      - '6049'
+    body: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<wsdl:definitions xmlns:s=\"http://www.w3.org/2001/XMLSchema\"
+      xmlns:soap12=\"http://schemas.xmlsoap.org/wsdl/soap12/\" xmlns:mime=\"http://schemas.xmlsoap.org/wsdl/mime/\"
+      xmlns:tns=\"http://www.clearsale.com.br/integration\" xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"
+      xmlns:tm=\"http://microsoft.com/wsdl/mime/textMatching/\" xmlns:http=\"http://schemas.xmlsoap.org/wsdl/http/\"
+      xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" targetNamespace=\"http://www.clearsale.com.br/integration\"
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">\r\n  <wsdl:types>\r\n    <s:schema
+      elementFormDefault=\"qualified\" targetNamespace=\"http://www.clearsale.com.br/integration\">\r\n
+      \     <s:element name=\"SendOrders2\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\"
+      />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"pedidos\"
+      type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+      \     </s:element>\r\n      <s:element name=\"SendOrders2Response\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"SendOrders2Result\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"SendOrders\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"xml\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"SendOrdersResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"SendOrdersResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetPackageStatus\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"packageID\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"GetPackageStatusResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"GetPackageStatusResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetOrderStatus\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"orderID\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"GetOrderStatusResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"GetOrderStatusResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetOrdersStatus\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"xml\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"GetOrdersStatusResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"GetOrdersStatusResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetReturnAnalysis\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"GetReturnAnalysisResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"GetReturnAnalysisResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"SetOrderAsReturned\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"orderID\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"SetOrderAsReturnedResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"SetOrderAsReturnedResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetAnalystComments\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"orderID\" type=\"s:string\"
+      />\r\n            <s:element minOccurs=\"1\" maxOccurs=\"1\" name=\"getAll\"
+      type=\"s:boolean\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+      \     </s:element>\r\n      <s:element name=\"GetAnalystCommentsResponse\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"GetAnalystCommentsResult\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"OrderChargeBack\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\"
+      />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"Xml\" type=\"s:string\"
+      />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"Note\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"OrderChargeBackResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"OrderChargeBackResult\" type=\"tns:TransactionStatusCbk\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:complexType name=\"TransactionStatusCbk\">\r\n
+      \       <s:complexContent mixed=\"false\">\r\n          <s:extension base=\"tns:TransactionStatus\">\r\n
+      \           <s:sequence>\r\n              <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"Orders\" type=\"tns:ArrayOfOrder\" />\r\n            </s:sequence>\r\n
+      \         </s:extension>\r\n        </s:complexContent>\r\n      </s:complexType>\r\n
+      \     <s:complexType name=\"TransactionStatus\">\r\n        <s:sequence>\r\n
+      \         <s:element minOccurs=\"1\" maxOccurs=\"1\" name=\"StatusCode\" type=\"tns:StatusCode\"
+      />\r\n          <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"Message\"
+      type=\"s:string\" />\r\n        </s:sequence>\r\n      </s:complexType>\r\n
+      \     <s:simpleType name=\"StatusCode\">\r\n        <s:restriction base=\"s:string\">\r\n
+      \         <s:enumeration value=\"Invalido\" />\r\n          <s:enumeration value=\"OK\"
+      />\r\n          <s:enumeration value=\"UserNotFound\" />\r\n          <s:enumeration
+      value=\"XMLValidation\" />\r\n          <s:enumeration value=\"XMLTransform\"
+      />\r\n          <s:enumeration value=\"UnexpectedError\" />\r\n          <s:enumeration
+      value=\"OrderExist\" />\r\n          <s:enumeration value=\"InputPlugin\" />\r\n
+      \         <s:enumeration value=\"OutputPlugin\" />\r\n          <s:enumeration
+      value=\"PaymentTypeNotFound\" />\r\n          <s:enumeration value=\"CardTypeNotFound\"
+      />\r\n          <s:enumeration value=\"StatusNotPermited\" />\r\n          <s:enumeration
+      value=\"OrderNotFound\" />\r\n          <s:enumeration value=\"OKComErros\"
+      />\r\n          <s:enumeration value=\"FilaNaoEncontrada\" />\r\n          <s:enumeration
+      value=\"InvalidRequest\" />\r\n          <s:enumeration value=\"PaymentNotFound\"
+      />\r\n          <s:enumeration value=\"NsuExists\" />\r\n          <s:enumeration
+      value=\"NsuNotFound\" />\r\n          <s:enumeration value=\"NsuDuplicate\"
+      />\r\n          <s:enumeration value=\"QuizInactive\" />\r\n          <s:enumeration
+      value=\"GenericFieldNotFound\" />\r\n          <s:enumeration value=\"QuizNotFound\"
+      />\r\n          <s:enumeration value=\"UserNotAuthorized\" />\r\n          <s:enumeration
+      value=\"OrderWithoutDiagnostics\" />\r\n          <s:enumeration value=\"ProductUnavailable\"
+      />\r\n        </s:restriction>\r\n      </s:simpleType>\r\n      <s:complexType
+      name=\"ArrayOfOrder\">\r\n        <s:sequence>\r\n          <s:element minOccurs=\"0\"
+      maxOccurs=\"unbounded\" name=\"Order\" nillable=\"true\" type=\"tns:Order\"
+      />\r\n        </s:sequence>\r\n      </s:complexType>\r\n      <s:complexType
+      name=\"Order\">\r\n        <s:sequence>\r\n          <s:element minOccurs=\"0\"
+      maxOccurs=\"1\" name=\"OrderId\" type=\"s:string\" />\r\n          <s:element
+      minOccurs=\"1\" maxOccurs=\"1\" name=\"Status\" type=\"tns:StatusCode\" />\r\n
+      \         <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"Message\" type=\"s:string\"
+      />\r\n        </s:sequence>\r\n      </s:complexType>\r\n      <s:element name=\"OrderChargeBackByNsu\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"1\" maxOccurs=\"1\" name=\"cartaoBandeira\"
+      type=\"s:int\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"nsu\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+      maxOccurs=\"1\" name=\"conciliadorCode\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"OrderChargeBackByNsuResponse\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"OrderChargeBackByNsuResult\" type=\"tns:TransactionStatusCbk\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"SubmitInfo\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\"
+      />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"xmlDados\"
+      type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+      \     </s:element>\r\n      <s:element name=\"SubmitInfoResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"SubmitInfoResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"CheckOrderStatus\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"pedidoIDCliente\"
+      type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+      \     </s:element>\r\n      <s:element name=\"CheckOrderStatusResponse\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"CheckOrderStatusResult\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"GetQuizURL\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\"
+      />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"orderID\"
+      type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+      \     </s:element>\r\n      <s:element name=\"GetQuizURLResponse\">\r\n        <s:complexType>\r\n
+      \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+      name=\"GetQuizURLResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+      \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetPackageStatusCustom\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"entityCode\" type=\"s:string\" />\r\n
+      \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"transactionID\"
+      type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+      \     </s:element>\r\n      <s:element name=\"GetPackageStatusCustomResponse\">\r\n
+      \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+      minOccurs=\"0\" maxOccurs=\"1\" name=\"GetPackageStatusCustomResult\" type=\"s:string\"
+      />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+      \     <s:element name=\"string\" nillable=\"true\" type=\"s:string\" />\r\n
+      \     <s:element name=\"TransactionStatusCbk\" nillable=\"true\" type=\"tns:TransactionStatusCbk\"
+      />\r\n    </s:schema>\r\n  </wsdl:types>\r\n  <wsdl:message name=\"SendOrders2SoapIn\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:SendOrders2\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SendOrders2SoapOut\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:SendOrders2Response\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"SendOrdersSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:SendOrders\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendOrdersSoapOut\">\r\n    <wsdl:part
+      name=\"parameters\" element=\"tns:SendOrdersResponse\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetPackageStatusSoapIn\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:GetPackageStatus\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"GetPackageStatusSoapOut\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetPackageStatusResponse\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOrderStatusSoapIn\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:GetOrderStatus\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetOrderStatusSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:GetOrderStatusResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"GetOrdersStatusSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetOrdersStatus\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOrdersStatusSoapOut\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:GetOrdersStatusResponse\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"GetReturnAnalysisSoapIn\">\r\n    <wsdl:part
+      name=\"parameters\" element=\"tns:GetReturnAnalysis\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetReturnAnalysisSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:GetReturnAnalysisResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"SetOrderAsReturnedSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:SetOrderAsReturned\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SetOrderAsReturnedSoapOut\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:SetOrderAsReturnedResponse\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAnalystCommentsSoapIn\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:GetAnalystComments\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"GetAnalystCommentsSoapOut\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:GetAnalystCommentsResponse\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackSoapIn\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:OrderChargeBack\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"OrderChargeBackSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:OrderChargeBackResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"OrderChargeBackByNsuSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:OrderChargeBackByNsu\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackByNsuSoapOut\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:OrderChargeBackByNsuResponse\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SubmitInfoSoapIn\">\r\n    <wsdl:part
+      name=\"parameters\" element=\"tns:SubmitInfo\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"SubmitInfoSoapOut\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:SubmitInfoResponse\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"CheckOrderStatusSoapIn\">\r\n
+      \   <wsdl:part name=\"parameters\" element=\"tns:CheckOrderStatus\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"CheckOrderStatusSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:CheckOrderStatusResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"GetQuizURLSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetQuizURL\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetQuizURLSoapOut\">\r\n    <wsdl:part
+      name=\"parameters\" element=\"tns:GetQuizURLResponse\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetPackageStatusCustomSoapIn\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:GetPackageStatusCustom\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"GetPackageStatusCustomSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+      element=\"tns:GetPackageStatusCustomResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"SendOrders2HttpGetIn\">\r\n    <wsdl:part name=\"entityCode\" type=\"s:string\"
+      />\r\n    <wsdl:part name=\"pedidos\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SendOrders2HttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+      element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendOrdersHttpGetIn\">\r\n
+      \   <wsdl:part name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"xml\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendOrdersHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetPackageStatusHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"packageID\" type=\"s:string\"
+      />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPackageStatusHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetOrderStatusHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"GetOrderStatusHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetOrdersStatusHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"xml\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"GetOrdersStatusHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetReturnAnalysisHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetReturnAnalysisHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SetOrderAsReturnedHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"SetOrderAsReturnedHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetAnalystCommentsHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\" type=\"s:string\" />\r\n
+      \   <wsdl:part name=\"getAll\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetAnalystCommentsHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+      element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackHttpGetIn\">\r\n
+      \   <wsdl:part name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"Xml\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"Note\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:TransactionStatusCbk\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"OrderChargeBackByNsuHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"cartaoBandeira\" type=\"s:string\"
+      />\r\n    <wsdl:part name=\"nsu\" type=\"s:string\" />\r\n    <wsdl:part name=\"conciliadorCode\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackByNsuHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:TransactionStatusCbk\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SubmitInfoHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"xmlDados\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"SubmitInfoHttpGetOut\">\r\n    <wsdl:part
+      name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"CheckOrderStatusHttpGetIn\">\r\n    <wsdl:part name=\"entityCode\" type=\"s:string\"
+      />\r\n    <wsdl:part name=\"pedidoIDCliente\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"CheckOrderStatusHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+      element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetQuizURLHttpGetIn\">\r\n
+      \   <wsdl:part name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetQuizURLHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetPackageStatusCustomHttpGetIn\">\r\n    <wsdl:part
+      name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"transactionID\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPackageStatusCustomHttpGetOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SendOrders2HttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"pedidos\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"SendOrders2HttpPostOut\">\r\n    <wsdl:part
+      name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"SendOrdersHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\" type=\"s:string\"
+      />\r\n    <wsdl:part name=\"xml\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SendOrdersHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+      element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPackageStatusHttpPostIn\">\r\n
+      \   <wsdl:part name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"packageID\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPackageStatusHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetOrderStatusHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"GetOrderStatusHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetOrdersStatusHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"xml\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"GetOrdersStatusHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetReturnAnalysisHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetReturnAnalysisHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SetOrderAsReturnedHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"SetOrderAsReturnedHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetAnalystCommentsHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\" type=\"s:string\" />\r\n
+      \   <wsdl:part name=\"getAll\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetAnalystCommentsHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+      element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackHttpPostIn\">\r\n
+      \   <wsdl:part name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"Xml\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"Note\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:TransactionStatusCbk\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"OrderChargeBackByNsuHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"cartaoBandeira\" type=\"s:string\"
+      />\r\n    <wsdl:part name=\"nsu\" type=\"s:string\" />\r\n    <wsdl:part name=\"conciliadorCode\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"OrderChargeBackByNsuHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:TransactionStatusCbk\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"SubmitInfoHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\"
+      type=\"s:string\" />\r\n    <wsdl:part name=\"xmlDados\" type=\"s:string\" />\r\n
+      \ </wsdl:message>\r\n  <wsdl:message name=\"SubmitInfoHttpPostOut\">\r\n    <wsdl:part
+      name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+      name=\"CheckOrderStatusHttpPostIn\">\r\n    <wsdl:part name=\"entityCode\" type=\"s:string\"
+      />\r\n    <wsdl:part name=\"pedidoIDCliente\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"CheckOrderStatusHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+      element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetQuizURLHttpPostIn\">\r\n
+      \   <wsdl:part name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"orderID\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetQuizURLHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:message name=\"GetPackageStatusCustomHttpPostIn\">\r\n    <wsdl:part
+      name=\"entityCode\" type=\"s:string\" />\r\n    <wsdl:part name=\"transactionID\"
+      type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPackageStatusCustomHttpPostOut\">\r\n
+      \   <wsdl:part name=\"Body\" element=\"tns:string\" />\r\n  </wsdl:message>\r\n
+      \ <wsdl:portType name=\"ServiceSoap\">\r\n    <wsdl:operation name=\"SendOrders2\">\r\n
+      \     <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método
+      para envio de pedidos (igual ao SendOrders porém com o nome parametro (XML)
+      diferente (PEDIDOS))</wsdl:documentation>\r\n      <wsdl:input message=\"tns:SendOrders2SoapIn\"
+      />\r\n      <wsdl:output message=\"tns:SendOrders2SoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SendOrders\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método
+      para envio de pedidos</wsdl:documentation>\r\n      <wsdl:input message=\"tns:SendOrdersSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:SendOrdersSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetPackageStatus\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de todos os
+      pedidos em um pacote</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetPackageStatusSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:GetPackageStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetOrderStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de um pedido</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetOrderStatusSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:GetOrderStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetOrdersStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de vários pedidos</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetOrdersStatusSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:GetOrdersStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetReturnAnalysis\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de pedidos
+      que estão no clearsale em fila ou finalizados e que não foram setados como retornados</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetReturnAnalysisSoapIn\" />\r\n      <wsdl:output
+      message=\"tns:GetReturnAnalysisSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+      name=\"SetOrderAsReturned\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Avisa
+      ao ClearSale para que não retorne mais o pedido na chamada do Método GetReturnAnalysis</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:SetOrderAsReturnedSoapIn\" />\r\n      <wsdl:output
+      message=\"tns:SetOrderAsReturnedSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+      name=\"GetAnalystComments\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      os comentários dos analistas</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetAnalystCommentsSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:GetAnalystCommentsSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBack\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Marca
+      o pedido como ChargeBack</wsdl:documentation>\r\n      <wsdl:input message=\"tns:OrderChargeBackSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:OrderChargeBackSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Marca o pedido como ChargeBack
+      através do NSU</wsdl:documentation>\r\n      <wsdl:input message=\"tns:OrderChargeBackByNsuSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:OrderChargeBackByNsuSoapOut\" />\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"SubmitInfo\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método para envio de pedidos</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:SubmitInfoSoapIn\" />\r\n      <wsdl:output
+      message=\"tns:SubmitInfoSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+      name=\"CheckOrderStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de um pedido</wsdl:documentation>\r\n      <wsdl:input message=\"tns:CheckOrderStatusSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:CheckOrderStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetQuizURL\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      a URL do Questionário para auto-validação</wsdl:documentation>\r\n      <wsdl:input
+      message=\"tns:GetQuizURLSoapIn\" />\r\n      <wsdl:output message=\"tns:GetQuizURLSoapOut\"
+      />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatusCustom\">\r\n
+      \     <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status do pacote</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetPackageStatusCustomSoapIn\"
+      />\r\n      <wsdl:output message=\"tns:GetPackageStatusCustomSoapOut\" />\r\n
+      \   </wsdl:operation>\r\n  </wsdl:portType>\r\n  <wsdl:portType name=\"ServiceHttpGet\">\r\n
+      \   <wsdl:operation name=\"SendOrders2\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método
+      para envio de pedidos (igual ao SendOrders porém com o nome parametro (XML)
+      diferente (PEDIDOS))</wsdl:documentation>\r\n      <wsdl:input message=\"tns:SendOrders2HttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:SendOrders2HttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SendOrders\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método
+      para envio de pedidos</wsdl:documentation>\r\n      <wsdl:input message=\"tns:SendOrdersHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:SendOrdersHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetPackageStatus\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de todos os
+      pedidos em um pacote</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetPackageStatusHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:GetPackageStatusHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetOrderStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de um pedido</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetOrderStatusHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:GetOrderStatusHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetOrdersStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de vários pedidos</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetOrdersStatusHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:GetOrdersStatusHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetReturnAnalysis\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de pedidos
+      que estão no clearsale em fila ou finalizados e que não foram setados como retornados</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetReturnAnalysisHttpGetIn\" />\r\n      <wsdl:output
+      message=\"tns:GetReturnAnalysisHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SetOrderAsReturned\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Avisa ao ClearSale para que
+      não retorne mais o pedido na chamada do Método GetReturnAnalysis</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:SetOrderAsReturnedHttpGetIn\" />\r\n      <wsdl:output
+      message=\"tns:SetOrderAsReturnedHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetAnalystComments\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna os comentários dos analistas</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetAnalystCommentsHttpGetIn\" />\r\n      <wsdl:output
+      message=\"tns:GetAnalystCommentsHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBack\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Marca
+      o pedido como ChargeBack</wsdl:documentation>\r\n      <wsdl:input message=\"tns:OrderChargeBackHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:OrderChargeBackHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Marca o pedido como ChargeBack
+      através do NSU</wsdl:documentation>\r\n      <wsdl:input message=\"tns:OrderChargeBackByNsuHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:OrderChargeBackByNsuHttpGetOut\" />\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"SubmitInfo\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método para envio de pedidos</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:SubmitInfoHttpGetIn\" />\r\n      <wsdl:output
+      message=\"tns:SubmitInfoHttpGetOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+      name=\"CheckOrderStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de um pedido</wsdl:documentation>\r\n      <wsdl:input message=\"tns:CheckOrderStatusHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:CheckOrderStatusHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetQuizURL\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      a URL do Questionário para auto-validação</wsdl:documentation>\r\n      <wsdl:input
+      message=\"tns:GetQuizURLHttpGetIn\" />\r\n      <wsdl:output message=\"tns:GetQuizURLHttpGetOut\"
+      />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatusCustom\">\r\n
+      \     <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status do pacote</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetPackageStatusCustomHttpGetIn\"
+      />\r\n      <wsdl:output message=\"tns:GetPackageStatusCustomHttpGetOut\" />\r\n
+      \   </wsdl:operation>\r\n  </wsdl:portType>\r\n  <wsdl:portType name=\"ServiceHttpPost\">\r\n
+      \   <wsdl:operation name=\"SendOrders2\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método
+      para envio de pedidos (igual ao SendOrders porém com o nome parametro (XML)
+      diferente (PEDIDOS))</wsdl:documentation>\r\n      <wsdl:input message=\"tns:SendOrders2HttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:SendOrders2HttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SendOrders\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método
+      para envio de pedidos</wsdl:documentation>\r\n      <wsdl:input message=\"tns:SendOrdersHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:SendOrdersHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetPackageStatus\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de todos os
+      pedidos em um pacote</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetPackageStatusHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:GetPackageStatusHttpPostOut\" />\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrderStatus\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de um pedido</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetOrderStatusHttpPostIn\" />\r\n      <wsdl:output
+      message=\"tns:GetOrderStatusHttpPostOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+      name=\"GetOrdersStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de vários pedidos</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetOrdersStatusHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:GetOrdersStatusHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetReturnAnalysis\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status de pedidos
+      que estão no clearsale em fila ou finalizados e que não foram setados como retornados</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetReturnAnalysisHttpPostIn\" />\r\n      <wsdl:output
+      message=\"tns:GetReturnAnalysisHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SetOrderAsReturned\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Avisa ao ClearSale para que
+      não retorne mais o pedido na chamada do Método GetReturnAnalysis</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:SetOrderAsReturnedHttpPostIn\" />\r\n      <wsdl:output
+      message=\"tns:SetOrderAsReturnedHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetAnalystComments\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna os comentários dos analistas</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetAnalystCommentsHttpPostIn\" />\r\n      <wsdl:output
+      message=\"tns:GetAnalystCommentsHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBack\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Marca
+      o pedido como ChargeBack</wsdl:documentation>\r\n      <wsdl:input message=\"tns:OrderChargeBackHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:OrderChargeBackHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Marca o pedido como ChargeBack
+      através do NSU</wsdl:documentation>\r\n      <wsdl:input message=\"tns:OrderChargeBackByNsuHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:OrderChargeBackByNsuHttpPostOut\" />\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"SubmitInfo\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Método para envio de pedidos</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:SubmitInfoHttpPostIn\" />\r\n      <wsdl:output
+      message=\"tns:SubmitInfoHttpPostOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+      name=\"CheckOrderStatus\">\r\n      <wsdl:documentation xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna
+      o status de um pedido</wsdl:documentation>\r\n      <wsdl:input message=\"tns:CheckOrderStatusHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:CheckOrderStatusHttpPostOut\" />\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetQuizURL\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna a URL do Questionário
+      para auto-validação</wsdl:documentation>\r\n      <wsdl:input message=\"tns:GetQuizURLHttpPostIn\"
+      />\r\n      <wsdl:output message=\"tns:GetQuizURLHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetPackageStatusCustom\">\r\n      <wsdl:documentation
+      xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">Retorna o status do pacote</wsdl:documentation>\r\n
+      \     <wsdl:input message=\"tns:GetPackageStatusCustomHttpPostIn\" />\r\n      <wsdl:output
+      message=\"tns:GetPackageStatusCustomHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+      \ </wsdl:portType>\r\n  <wsdl:binding name=\"ServiceSoap\" type=\"tns:ServiceSoap\">\r\n
+      \   <soap:binding transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n
+      \   <wsdl:operation name=\"SendOrders2\">\r\n      <soap:operation soapAction=\"http://www.clearsale.com.br/integration/SendOrders2\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SendOrders\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/SendOrders\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatus\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetPackageStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrderStatus\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetOrderStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrdersStatus\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetOrdersStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetReturnAnalysis\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetReturnAnalysis\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SetOrderAsReturned\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/SetOrderAsReturned\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAnalystComments\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetAnalystComments\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBack\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/OrderChargeBack\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/OrderChargeBackByNsu\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SubmitInfo\">\r\n
+      \     <soap:operation soapAction=\"http://tempuri.org/\" style=\"document\"
+      />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <soap:body use=\"literal\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"CheckOrderStatus\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/CheckOrderStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetQuizURL\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetQuizURL\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatusCustom\">\r\n
+      \     <soap:operation soapAction=\"http://www.clearsale.com.br/integration/GetPackageStatusCustom\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+      \ <wsdl:binding name=\"ServiceSoap12\" type=\"tns:ServiceSoap\">\r\n    <soap12:binding
+      transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n    <wsdl:operation
+      name=\"SendOrders2\">\r\n      <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/SendOrders2\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SendOrders\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/SendOrders\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatus\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetPackageStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrderStatus\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetOrderStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrdersStatus\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetOrdersStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetReturnAnalysis\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetReturnAnalysis\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SetOrderAsReturned\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/SetOrderAsReturned\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAnalystComments\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetAnalystComments\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBack\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/OrderChargeBack\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/OrderChargeBackByNsu\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SubmitInfo\">\r\n
+      \     <soap12:operation soapAction=\"http://tempuri.org/\" style=\"document\"
+      />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <soap12:body use=\"literal\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"CheckOrderStatus\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/CheckOrderStatus\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetQuizURL\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetQuizURL\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatusCustom\">\r\n
+      \     <soap12:operation soapAction=\"http://www.clearsale.com.br/integration/GetPackageStatusCustom\"
+      style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+      \ <wsdl:binding name=\"ServiceHttpGet\" type=\"tns:ServiceHttpGet\">\r\n    <http:binding
+      verb=\"GET\" />\r\n    <wsdl:operation name=\"SendOrders2\">\r\n      <http:operation
+      location=\"/SendOrders2\" />\r\n      <wsdl:input>\r\n        <http:urlEncoded
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"SendOrders\">\r\n
+      \     <http:operation location=\"/SendOrders\" />\r\n      <wsdl:input>\r\n
+      \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetPackageStatus\">\r\n      <http:operation location=\"/GetPackageStatus\"
+      />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrderStatus\">\r\n      <http:operation
+      location=\"/GetOrderStatus\" />\r\n      <wsdl:input>\r\n        <http:urlEncoded
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrdersStatus\">\r\n
+      \     <http:operation location=\"/GetOrdersStatus\" />\r\n      <wsdl:input>\r\n
+      \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetReturnAnalysis\">\r\n      <http:operation location=\"/GetReturnAnalysis\"
+      />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"SetOrderAsReturned\">\r\n
+      \     <http:operation location=\"/SetOrderAsReturned\" />\r\n      <wsdl:input>\r\n
+      \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetAnalystComments\">\r\n      <http:operation location=\"/GetAnalystComments\"
+      />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBack\">\r\n      <http:operation
+      location=\"/OrderChargeBack\" />\r\n      <wsdl:input>\r\n        <http:urlEncoded
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n
+      \     <http:operation location=\"/OrderChargeBackByNsu\" />\r\n      <wsdl:input>\r\n
+      \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SubmitInfo\">\r\n      <http:operation location=\"/SubmitInfo\"
+      />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"CheckOrderStatus\">\r\n
+      \     <http:operation location=\"/CheckOrderStatus\" />\r\n      <wsdl:input>\r\n
+      \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetQuizURL\">\r\n      <http:operation location=\"/GetQuizURL\"
+      />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatusCustom\">\r\n
+      \     <http:operation location=\"/GetPackageStatusCustom\" />\r\n      <wsdl:input>\r\n
+      \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \ </wsdl:binding>\r\n  <wsdl:binding name=\"ServiceHttpPost\" type=\"tns:ServiceHttpPost\">\r\n
+      \   <http:binding verb=\"POST\" />\r\n    <wsdl:operation name=\"SendOrders2\">\r\n
+      \     <http:operation location=\"/SendOrders2\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"SendOrders\">\r\n      <http:operation
+      location=\"/SendOrders\" />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatus\">\r\n
+      \     <http:operation location=\"/GetPackageStatus\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetOrderStatus\">\r\n      <http:operation
+      location=\"/GetOrderStatus\" />\r\n      <wsdl:input>\r\n        <mime:content
+      type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"GetOrdersStatus\">\r\n      <http:operation location=\"/GetOrdersStatus\"
+      />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetReturnAnalysis\">\r\n
+      \     <http:operation location=\"/GetReturnAnalysis\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"SetOrderAsReturned\">\r\n
+      \     <http:operation location=\"/SetOrderAsReturned\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetAnalystComments\">\r\n
+      \     <http:operation location=\"/GetAnalystComments\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"OrderChargeBack\">\r\n      <http:operation
+      location=\"/OrderChargeBack\" />\r\n      <wsdl:input>\r\n        <mime:content
+      type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"OrderChargeBackByNsu\">\r\n      <http:operation
+      location=\"/OrderChargeBackByNsu\" />\r\n      <wsdl:input>\r\n        <mime:content
+      type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+      \       <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+      \   <wsdl:operation name=\"SubmitInfo\">\r\n      <http:operation location=\"/SubmitInfo\"
+      />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"CheckOrderStatus\">\r\n
+      \     <http:operation location=\"/CheckOrderStatus\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetQuizURL\">\r\n      <http:operation
+      location=\"/GetQuizURL\" />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+      />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml part=\"Body\"
+      />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetPackageStatusCustom\">\r\n
+      \     <http:operation location=\"/GetPackageStatusCustom\" />\r\n      <wsdl:input>\r\n
+      \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+      \     <wsdl:output>\r\n        <mime:mimeXml part=\"Body\" />\r\n      </wsdl:output>\r\n
+      \   </wsdl:operation>\r\n  </wsdl:binding>\r\n  <wsdl:service name=\"Service\">\r\n
+      \   <wsdl:port name=\"ServiceSoap\" binding=\"tns:ServiceSoap\">\r\n      <soap:address
+      location=\"http://homologacao.clearsale.com.br/integracaov2/service.asmx\" />\r\n
+      \   </wsdl:port>\r\n    <wsdl:port name=\"ServiceSoap12\" binding=\"tns:ServiceSoap12\">\r\n
+      \     <soap12:address location=\"http://homologacao.clearsale.com.br/integracaov2/service.asmx\"
+      />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"ServiceHttpGet\" binding=\"tns:ServiceHttpGet\">\r\n
+      \     <http:address location=\"http://homologacao.clearsale.com.br/integracaov2/service.asmx\"
+      />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"ServiceHttpPost\" binding=\"tns:ServiceHttpPost\">\r\n
+      \     <http:address location=\"http://homologacao.clearsale.com.br/integracaov2/service.asmx\"
+      />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: http://homologacao.clearsale.com.br:80/integracaov2/service.asmx
+    body: |-
+      <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.clearsale.com.br/integration" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:SubmitInfo><tns:entityCode>4AFBF7B6-32B9-4527-A148-0F01BB72AB94</tns:entityCode><tns:xmlDados>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+      &lt;ClearID_Input&gt;
+        &lt;SessionID&gt;session_id&lt;/SessionID&gt;
+        &lt;Pedido&gt;
+          &lt;PedidoID&gt;45&lt;/PedidoID&gt;
+          &lt;Data&gt;2016-07-02T14:30:51&lt;/Data&gt;
+          &lt;Email&gt;dev@pegcar.com&lt;/Email&gt;
+          &lt;CanalID&gt;SITE&lt;/CanalID&gt;
+          &lt;B2B_B2C&gt;B2C&lt;/B2B_B2C&gt;
+          &lt;ValorFrete&gt;0.00&lt;/ValorFrete&gt;
+          &lt;ValorTotalItens&gt;440.00&lt;/ValorTotalItens&gt;
+          &lt;ValorTotalPedido&gt;157.00&lt;/ValorTotalPedido&gt;
+          &lt;QtdParcelas&gt;1&lt;/QtdParcelas&gt;
+          &lt;PrazoEntrega&gt;1&lt;/PrazoEntrega&gt;
+          &lt;QtdItens&gt;2&lt;/QtdItens&gt;
+          &lt;QtdFormasPagamento&gt;1&lt;/QtdFormasPagamento&gt;
+          &lt;IP&gt;192.168.0.256&lt;/IP&gt;
+          &lt;Observacao&gt;obs&lt;/Observacao&gt;
+          &lt;Status&gt;0&lt;/Status&gt;
+          &lt;Origem&gt;web&lt;/Origem&gt;
+          &lt;DadosCobranca&gt;
+            &lt;UsuarioID&gt;42&lt;/UsuarioID&gt;
+            &lt;TipoUsuario&gt;1&lt;/TipoUsuario&gt;
+            &lt;DocumentoLegal1&gt;43523311-1&lt;/DocumentoLegal1&gt;
+            &lt;DocumentoLegal2&gt;36564860111&lt;/DocumentoLegal2&gt;
+            &lt;Nome&gt;Rafael Almeida&lt;/Nome&gt;
+            &lt;Email&gt;dev@pegcar.com&lt;/Email&gt;
+            &lt;Sexo&gt;M&lt;/Sexo&gt;
+            &lt;Nascimento&gt;1987-04-09T00:00:00&lt;/Nascimento&gt;
+            &lt;Endereco&gt;
+              &lt;Logradouro&gt;Brigadeiro Araujo&lt;/Logradouro&gt;
+              &lt;Complemento&gt;Casa Única&lt;/Complemento&gt;
+              &lt;Numero&gt;76&lt;/Numero&gt;
+              &lt;Bairro&gt;Freguesia do Ó&lt;/Bairro&gt;
+              &lt;Cidade&gt;São Paulo&lt;/Cidade&gt;
+              &lt;UF&gt;SP&lt;/UF&gt;
+              &lt;CEP&gt;02733090&lt;/CEP&gt;
+              &lt;Pais&gt;Brasil&lt;/Pais&gt;
+            &lt;/Endereco&gt;
+            &lt;Telefones&gt;
+              &lt;Telefone&gt;
+                &lt;Tipo&gt;0&lt;/Tipo&gt;
+                &lt;DDI&gt;55&lt;/DDI&gt;
+                &lt;DDD&gt;11&lt;/DDD&gt;
+                &lt;Numero&gt;972653111&lt;/Numero&gt;
+                &lt;Ramal&gt;11&lt;/Ramal&gt;
+              &lt;/Telefone&gt;
+            &lt;/Telefones&gt;
+          &lt;/DadosCobranca&gt;
+          &lt;DadosEntrega&gt;
+            &lt;UsuarioID&gt;42&lt;/UsuarioID&gt;
+            &lt;TipoUsuario&gt;1&lt;/TipoUsuario&gt;
+            &lt;DocumentoLegal1&gt;43523311-1&lt;/DocumentoLegal1&gt;
+            &lt;DocumentoLegal2&gt;36564860111&lt;/DocumentoLegal2&gt;
+            &lt;Nome&gt;Rafael Almeida&lt;/Nome&gt;
+            &lt;Email&gt;dev@pegcar.com&lt;/Email&gt;
+            &lt;Sexo&gt;M&lt;/Sexo&gt;
+            &lt;Nascimento&gt;1987-04-09T00:00:00&lt;/Nascimento&gt;
+            &lt;Endereco&gt;
+              &lt;Logradouro&gt;Brigadeiro Araujo&lt;/Logradouro&gt;
+              &lt;Complemento&gt;Casa Única&lt;/Complemento&gt;
+              &lt;Numero&gt;76&lt;/Numero&gt;
+              &lt;Bairro&gt;Freguesia do Ó&lt;/Bairro&gt;
+              &lt;Cidade&gt;São Paulo&lt;/Cidade&gt;
+              &lt;UF&gt;SP&lt;/UF&gt;
+              &lt;CEP&gt;02733090&lt;/CEP&gt;
+              &lt;Pais&gt;Brasil&lt;/Pais&gt;
+            &lt;/Endereco&gt;
+            &lt;Telefones&gt;
+              &lt;Telefone&gt;
+                &lt;Tipo&gt;0&lt;/Tipo&gt;
+                &lt;DDI&gt;55&lt;/DDI&gt;
+                &lt;DDD&gt;11&lt;/DDD&gt;
+                &lt;Numero&gt;972653111&lt;/Numero&gt;
+                &lt;Ramal&gt;11&lt;/Ramal&gt;
+              &lt;/Telefone&gt;
+            &lt;/Telefones&gt;
+          &lt;/DadosEntrega&gt;
+          &lt;Pagamentos&gt;
+            &lt;Pagamento&gt;
+              &lt;NumeroSequencial&gt;1&lt;/NumeroSequencial&gt;
+              &lt;Data&gt;2016-07-02T14:30:51&lt;/Data&gt;
+              &lt;Valor&gt;157.00&lt;/Valor&gt;
+              &lt;TipoPagamentoID&gt;14&lt;/TipoPagamentoID&gt;
+              &lt;QtdParcelas&gt;1&lt;/QtdParcelas&gt;
+              &lt;HashNumeroCartao&gt;747417f2206148a3118d02f3adf20b5e4139baac&lt;/HashNumeroCartao&gt;
+              &lt;BinCartao&gt;111111&lt;/BinCartao&gt;
+              &lt;Cartao4Ultimos&gt;1111&lt;/Cartao4Ultimos&gt;
+              &lt;TipoCartao&gt;3&lt;/TipoCartao&gt;
+              &lt;DataValidadeCartao&gt;01/18&lt;/DataValidadeCartao&gt;
+              &lt;NomeTitularCartao&gt;Rafael S Almeida&lt;/NomeTitularCartao&gt;
+              &lt;DocumentoLegal1&gt;36564860111&lt;/DocumentoLegal1&gt;
+              &lt;EnderecoCobranca&gt;
+                &lt;Logradouro&gt;Brigadeiro Araujo&lt;/Logradouro&gt;
+                &lt;Complemento&gt;Casa Única&lt;/Complemento&gt;
+                &lt;Numero&gt;76&lt;/Numero&gt;
+                &lt;Bairro&gt;Freguesia do Ó&lt;/Bairro&gt;
+                &lt;Cidade&gt;São Paulo&lt;/Cidade&gt;
+                &lt;UF&gt;SP&lt;/UF&gt;
+                &lt;CEP&gt;02733090&lt;/CEP&gt;
+                &lt;Pais&gt;Brasil&lt;/Pais&gt;
+              &lt;/EnderecoCobranca&gt;
+            &lt;/Pagamento&gt;
+          &lt;/Pagamentos&gt;
+          &lt;Itens&gt;
+            &lt;Item&gt;
+              &lt;CodigoItem&gt;110&lt;/CodigoItem&gt;
+              &lt;NomeItem&gt;Pikachu&lt;/NomeItem&gt;
+              &lt;ValorItem&gt;220.00&lt;/ValorItem&gt;
+              &lt;Quantidade&gt;22&lt;/Quantidade&gt;
+              &lt;Generico&gt;OBS&lt;/Generico&gt;
+              &lt;CodigoCategoria&gt;110&lt;/CodigoCategoria&gt;
+              &lt;NomeCategoria&gt;Única&lt;/NomeCategoria&gt;
+            &lt;/Item&gt;
+            &lt;Item&gt;
+              &lt;CodigoItem&gt;110&lt;/CodigoItem&gt;
+              &lt;NomeItem&gt;Pikachu&lt;/NomeItem&gt;
+              &lt;ValorItem&gt;220.00&lt;/ValorItem&gt;
+              &lt;Quantidade&gt;22&lt;/Quantidade&gt;
+              &lt;Generico&gt;OBS&lt;/Generico&gt;
+              &lt;CodigoCategoria&gt;110&lt;/CodigoCategoria&gt;
+              &lt;NomeCategoria&gt;Única&lt;/NomeCategoria&gt;
+            &lt;/Item&gt;
+          &lt;/Itens&gt;
+        &lt;/Pedido&gt;
+      &lt;/ClearID_Input&gt;
+      </tns:xmlDados></tns:SubmitInfo></env:Body></env:Envelope>
+    headers:
+      soapaction:
+      - '"http://tempuri.org/"'
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '5814'
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private, max-age=0
+      content-type:
+      - text/xml; charset=utf-8
+      vary:
+      - Accept-Encoding
+      server:
+      - Microsoft-IIS/8.5
+      x-aspnet-version:
+      - 2.0.50727
+      x-powered-by:
+      - ASP.NET
+      date:
+      - Tue, 30 Aug 2016 14:53:57 GMT
+      content-length:
+      - '513'
+    body: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SubmitInfoResponse
+      xmlns="http://www.clearsale.com.br/integration"><SubmitInfoResult>&lt;?xml version="1.0"
+      encoding="utf-8"?&gt;&lt;ClearID&gt;&lt;PackageStatus&gt;&lt;TransactionID&gt;22c2a71e-2b94-472d-88dc-6f09a0dd5986&lt;/TransactionID&gt;&lt;StatusCode&gt;0&lt;/StatusCode&gt;&lt;Message&gt;OK&lt;/Message&gt;&lt;Pedidos&gt;&lt;Pedido&gt;&lt;ID&gt;45&lt;/ID&gt;&lt;Score&gt;57.4000&lt;/Score&gt;&lt;Status&gt;RPA&lt;/Status&gt;&lt;URLQuestionario
+      /&gt;&lt;/Pedido&gt;&lt;/Pedidos&gt;&lt;/PackageStatus&gt;&lt;/ClearID&gt;</SubmitInfoResult></SubmitInfoResponse></soap:Body></soap:Envelope>
+    http_version: '1.1'
