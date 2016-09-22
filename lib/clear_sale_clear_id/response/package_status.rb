@@ -12,7 +12,7 @@ module ClearSaleClearId
         clear_id = Nori.new.parse(response_body)
         attributes = clear_id['ClearID']['PackageStatus']
 
-        self.status_code = attributes['StatusCode']
+        self.status_code = attributes['StatusCode'].to_i
         self.transaction_id = attributes['TransactionID']
         self.message = attributes['Message']
 

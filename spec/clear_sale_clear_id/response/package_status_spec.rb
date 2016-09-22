@@ -10,7 +10,7 @@ module ClearSaleClearId
             "<ClearID>
                <PackageStatus>
                  <TransactionID>transaction_id</TransactionID>
-                 <StatusCode>status_code</StatusCode>
+                 <StatusCode>0</StatusCode>
                  <Message>message</Message>
                  <Pedidos>
                    <Pedido>
@@ -33,7 +33,7 @@ module ClearSaleClearId
           end
 
           it 'sets the status code' do
-            expect(package_status.status_code).to eq('status_code')
+            expect(package_status.status_code).to eq(0)
           end
 
           it 'sets the message' do
@@ -87,6 +87,10 @@ module ClearSaleClearId
 
             it 'sets the orders array to empty array' do
               expect(package_status.orders).to eq([])
+            end
+
+            it 'sets the status code' do
+              expect(package_status.status_code).to eq(4)
             end
           end
         end
