@@ -4,7 +4,7 @@ This gem helps to integrate with ClearSale ClearId product. This is done to use
 on [PegCar.com][pegcar] and it is designed to fill our needs with less work as
 possible. For this reason, some fields are reused between "DadosCobranca" and
 "DadosEntrega". Although, all significant code is tested and possible to be
-splited if you need to use diferrent values on each of the fields.
+split if you need to use different values on each of the fields.
 
 If you need that, we really encourage you to make an PR with this piece of code.
 
@@ -38,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at
 https://github.com/pegcar/clear_sale_clear_id. This project is intended to be
-a safe, welcoming space for collaboration, and contributors are expected to
+a safe, welcoming space for collaboration and contributors are expected to
 adhere to the [Contributor Covenant](http://contributor-covenant.org) code of
 conduct.
 
