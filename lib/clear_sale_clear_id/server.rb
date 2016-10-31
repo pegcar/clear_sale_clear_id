@@ -21,7 +21,7 @@ module ClearSaleClearId
 
       response = savon_client.call(
         :submit_info, message: {
-          'entityCode' => '4AFBF7B6-32B9-4527-A148-0F01BB72AB94',
+          'entityCode' => self.entity_code,
           'xmlDados' => request_body
         }
       )
